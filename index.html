@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TO MINH ANH</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./assets/gift-box-with-pink-bow-png.webp">
+  </head>
+  <body>
+    <!-- <div id="root"></div> -->
+    <div id="appear" class="container">
+      <div class="head">
+        <div class="hope">
+          <h1>HAPPY BIRTHDAY</h1>
+          <h3>Wishing you a year filled with love, laughter, and blessings. Moreover, your dream comes true!</h3>
+        </div>
+        <div class="birthday-cake">
+          <img src="./assets/birthday-cake.gif" alt="">
+        </div>
+      </div>
+      <div class="img-container">
+        <img src="./assets/Miaz1.png" alt="">
+        <img src="./assets/Miaz2.png" alt="">
+      </div>
+    </div>
+    <div id="appearGif" class="gif1">
+      <img src="./assets/gif2.gif" alt="">
+    </div>
+    <div class="signature">
+      <h4>From Peanut</h4>
+    </div>
+    <div id="balloon1">
+      <img src="./assets/pngegg.png" alt="">
+    </div>
+    <div id="balloon2">
+      <img src="./assets/pngegg (1).png" alt="">
+    </div>
+    <div id="overlay" class="background-cover">
+      <div id="overlay" class="overlay">
+        <div id="overlay" class="o-content">
+          <img src="./assets/Cat.jpg" alt="">
+          <h1>30/10/2024</h1>
+          <h3>Long time no see, hope you're doing well. I have a small present for you today !!!</h3>
+          <button id="button" onclick="OK" type="submit">OK</button>
+        </div>
+      </div>
+    </div>
+    <audio controls loop id="song" src="./assets/snvv.mp3" type="audio/mp3"></audio>
+    <script>
+    document.getElementById("button").addEventListener('click',()=>{
+      console.log(`Play Music!`);
+      document.getElementById("song").style.display = 'block';
+      document.getElementById("song").play();
+      document.getElementById("overlay").style.display = 'none';
+      document.getElementById("balloon1").style.display = 'block';
+      document.getElementById("balloon2").style.display = 'block';
+      document.getElementById("appear").style.display = 'flex';
+      document.getElementById("appearGif").style.display = 'block';
+    });
+    </script>
+  </body>
+</html>
